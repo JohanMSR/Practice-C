@@ -11,10 +11,13 @@ int main(){
         char Alive[1];  
     };
     struct form Johan;
-    Johan.ID = 28607006;
-    printf("Tell me ur name\n");
-    scanf("%s", input);
-    strcpy(Johan.Name, input);
-    printf("Tu nombre es %s", Johan.Name);
-    return 0;
+    strcpy(Johan.Name, "Johan");
+    strcpy(Johan.Last_Name, "Salazar");
+    strcpy(Johan.Alive, "Y");
+
+    void Kill(char Subject[1]){
+        strcpy(Subject, "N");
+        printf("%s", Subject);
+    };
+    Kill(Johan.Alive);
 }
